@@ -1,7 +1,8 @@
-Hello i am a blade template
+@extends('layouts.app')
 
-<div>
+@section('title', 'The list of tasks')
 
+@section('content')
     {{-- @if (count($tasks)) --}}
         @forelse ($tasks as $task)
             <div>
@@ -12,5 +13,4 @@ Hello i am a blade template
 
     {{-- <div> There are no tasks! </div> --}}
     {{-- @endif --}}
-
-</div>
+@endsection
